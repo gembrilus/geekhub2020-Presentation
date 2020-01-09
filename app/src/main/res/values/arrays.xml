@@ -1,0 +1,22 @@
+<resources>
+
+    <string-array name="entries">
+
+        <item>america</item>
+        <item>africa</item>
+        <item>alaska</item>
+        <item>angola</item>
+        <item>argentina</item>
+        <item>australia</item>
+        <item>asia</item>
+        <item>adis-abeba</item>
+        <item>canada</item>
+        <item>bulgary</item>
+        <item>denmark</item>
+        <item>England</item>
+        <item>France</item>
+
+    </string-array>
+
+
+</resources>

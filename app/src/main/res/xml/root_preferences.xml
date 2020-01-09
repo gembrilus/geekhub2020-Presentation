@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <iv.nakonechnyi.preferancepresentation.preferences.DatePreference
+        app:key="date_picker"
+        app:negativeButtonText="@android:string/cancel"
+        app:positiveButtonText="@android:string/ok"
+        app:title="Date picker"
+        app:useSimpleSummaryProvider="true" />
+
+    <iv.nakonechnyi.preferancepresentation.preferences.AutoCompletePreference
+        xmlns:acpref="http://schemas.android.com/apk/res/iv.nakonechnyi.preferancepresentation"
+        acpref:entries="@array/entries"
+        acpref:useSimpleSummaryProvider="true"
+        app:key="auto"
+        app:title="Enter a text:" />
+
+</PreferenceScreen>
