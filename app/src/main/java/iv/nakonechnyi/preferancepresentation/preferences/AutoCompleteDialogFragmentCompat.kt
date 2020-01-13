@@ -50,8 +50,8 @@ class AutoCompleteDialogFragmentCompat : PreferenceDialogFragmentCompat() {
         outState.putCharSequenceArray(SAVE_STATE_ENTRIES, entries)
     }
 
-    override fun onCreateDialogView(context: Context?): View =
-        LayoutInflater.from(context).inflate(R.layout.preference_dialog_autocompletetext, null)
+/*    override fun onCreateDialogView(context: Context?): View =
+        LayoutInflater.from(context).inflate(R.layout.preference_dialog_autocompletetext, null)*/
 
     override fun onBindDialogView(view: View) {
         super.onBindDialogView(view)

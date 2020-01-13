@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <iv.nakonechnyi.preferancepresentation.preferences.DatePreference
         app:key="date_picker"
@@ -15,5 +15,9 @@
         acpref:useSimpleSummaryProvider="true"
         app:key="auto"
         app:title="Enter a text:" />
+
+    <iv.nakonechnyi.preferancepresentation.preferences.ColorPickerPreference
+        app:key="picker"
+        app:title="Choose a color:" />
 
 </PreferenceScreen>

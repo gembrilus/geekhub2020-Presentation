@@ -27,6 +27,10 @@ class AutoCompletePreference(
         fun bindAutoComplete(textView: AutoCompleteTextView)
     }
 
+    init {
+        dialogLayoutResource = R.layout.preference_dialog_autocompletetext
+    }
+
     var text: String = EMPTY_VALUE
         set(value) {
             if (!TextUtils.equals(value, text)) {
@@ -88,9 +92,8 @@ class AutoCompletePreference(
         if (restorePersistedValue) {
             text = getPersistedString(defaultValue as String? ?: EMPTY_VALUE)
         } else {
-            text = defaultValue as String
+            text = defaultValue as String? ?: EMPTY_VALUE
             persistString(text)
-            if (shouldPersist()) persistString(text)
         }
     }
 
@@ -99,7 +102,6 @@ class AutoCompletePreference(
     override fun getSummary(): CharSequence? = SimpleSummaryProvider.provideSummary(this)
 
     override fun setSummary(summary: CharSequence?) = run { mSummary = summary }
-
 
     private class SavedState : BaseSavedState {
 
