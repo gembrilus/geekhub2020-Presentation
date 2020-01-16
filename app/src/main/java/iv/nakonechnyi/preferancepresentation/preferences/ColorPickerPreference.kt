@@ -31,6 +31,7 @@ class ColorPickerPreference(context: Context, attrs: AttributeSet) : Preference(
     init {
 
         widgetLayoutResource = R.layout.preference_color_picker
+        isSelectable = false
 
     }
 
