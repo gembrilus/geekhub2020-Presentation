@@ -10,9 +10,8 @@
         app:useSimpleSummaryProvider="true" />
 
     <iv.nakonechnyi.preferancepresentation.preferences.AutoCompletePreference
-        xmlns:acpref="http://schemas.android.com/apk/res/iv.nakonechnyi.preferancepresentation"
-        acpref:entries="@array/entries"
-        acpref:useSimpleSummaryProvider="true"
+        app:entries="@array/entries"
+        app:useSimpleSummaryProvider="true"
         app:key="auto"
         app:title="Enter a text:" />
 
